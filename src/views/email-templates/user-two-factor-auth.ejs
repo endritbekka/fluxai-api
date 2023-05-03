@@ -1,0 +1,31 @@
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Two Factor Authentication</title>
+    <meta name="description" content="Two Factor Authentication Template" />
+    <%- include('../partials/style'); %>
+  </head>
+
+  <body>
+    <div>
+      <div class="verification-container">
+        <h2>Two Factor Authentication</h2>
+        <p>
+          Your account security is important to us. In order to protect your
+          account, we require an additional layer of verification. Please enter
+          the code below to complete the login process.
+        </p>
+        <p>Verification Code: <strong><%= code %></strong></p>
+        <p>
+          Please note that this code will expire in 10 minutes. If you do not
+          complete the login process before the code expires, you will need to
+          request a new code.
+        </p>
+        <p>
+          If you did not initiate this login request, please contact our support
+          team immediately.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

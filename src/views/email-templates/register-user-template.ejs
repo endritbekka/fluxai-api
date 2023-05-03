@@ -1,0 +1,23 @@
+<html lang="en-US">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Verify your account</title>
+    <meta name="description" content="Email Verification Template" />
+    <%- include('../partials/style'); %>
+  </head>
+
+  <body>
+    <div>
+      <div class="verification-container">
+        <h2>Verify your email address</h2>
+        <p>
+          A verification link has been sent to your email. Please click on the
+          link to activate your account.
+        </p>
+        <a href="<%= `${url}?token=${token}` %>" class="btn-verify"
+          >Verify Email</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
